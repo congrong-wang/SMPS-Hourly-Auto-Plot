@@ -1,0 +1,19 @@
+from datetime import datetime
+from pathlib import Path
+
+
+# MODIFY THESE, according to your file locations
+WORK_DIR = Path("/path/to/your/project")  # Change this to your actual path
+WEATHER_CSV_DIR = str(WORK_DIR / "weather_data")  # Place of downloaded weather data
+SMPS_DATA_DIR = str(WORK_DIR / "SMPS_data")  # Place of your SMPS data
+SMPS_PLOT_DIR = str(WORK_DIR / "plots")  # Place to save SMPS plots (w/o weather)
+SMPS_WEATHER_PLOT_DIR = str(WORK_DIR / "plots")  # Place to save SMPS plots (w/ weather)
+
+
+LOCAL_TIMEZONE = "America/Anchorage"  # Modify this if needed
+SMPS_DATA_TIMEZONE = "UTC"  # Modify this if your SMPS data is in a different timezone
+
+
+# MODIFY THESE, according to the time you want to plot
+START_DATE = datetime(2025, 8, 10)
+END_DATE = datetime(2025, 8, 12)
