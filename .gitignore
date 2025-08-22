@@ -8,6 +8,8 @@
 !pyproject.toml
 !LICENSE
 !config.py.template
+!docs/
+!docs/**
 
 # But ignore user-specific config
 config.py

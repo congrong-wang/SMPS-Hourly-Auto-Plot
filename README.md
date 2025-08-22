@@ -1,5 +1,3 @@
-# SMPS Hourly Auto Plot
-
 Author: Congrong Wang (me@congrong.wang)
 
 ## Setup
@@ -25,8 +23,14 @@ pip install -e .
 
 ## Usage
 
-1. Modify `config.py` to set your file paths and date range
+1. Modify `config.py` to set your file paths and date range. Normally, file paths and time zones only need to be set once, but date range need to be adjusted each time.
+
 2. Run the scripts directly:
    - `python hourly_autoplot.py` - For continuous hourly plotting
-   - `python plot_SMPS_weather.py` - For plotting specific date ranges
-   - `python plot_daily.py` - For daily plots
+   - `python plot_daily.py` - To plot SMPS heat map
+   
+   ![](docs/heatmap_2025-08-11.png)
+   
+   - `python plot_SMPS_weather.py` - To plot SMPS heat map with weather
+   
+   ![](/home/wcr/Desktop/cr_smps/docs/PABI_daily_w_SMPS_2025-08-11.png)
