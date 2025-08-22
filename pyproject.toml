@@ -4,10 +4,17 @@ version = "0.1.0"
 description = "SMPS Hourly Auto Plot"
 authors = [{ name = "Congrong Wang", email = "me@congrong.wang" }]
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.11"
 
 dependencies = [
     "cr-asos @ git+https://github.com/congrong-wang/cr-ASOS.git",
     "cr-smps @ git+https://github.com/congrong-wang/cr-SMPS.git",
 ]
+
+[tool.setuptools]
+py-modules = ["config", "hourly_autoplot", "plot_daily", "plot_SMPS_weather"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
