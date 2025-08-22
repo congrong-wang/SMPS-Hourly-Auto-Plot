@@ -7,3 +7,6 @@
 !README.md
 !pyproject.toml
 !LICENSE
+
+# But ignore user-specific config
+config.py
