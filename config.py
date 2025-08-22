@@ -4,10 +4,10 @@ from pathlib import Path
 
 # MODIFY THESE, according to your file locations
 WORK_DIR = Path("/home/wcr/Desktop/cr_smps")
-WEATHER_CSV_DIR = WORK_DIR / "weather_data"  # Place of downloaded weather data
-SMPS_DATA_DIR = WORK_DIR / "SMPS_data"  # Place of your SMPS data
-SMPS_PLOT_DIR = WORK_DIR / "plots"  # Place to save SMPS plots (w/o weather)
-SMPS_WEATHER_PLOT_DIR = WORK_DIR / "plots"  # Place to save SMPS plots (w/ weather)
+WEATHER_CSV_DIR = str(WORK_DIR / "weather_data")  # Place of downloaded weather data
+SMPS_DATA_DIR = str(WORK_DIR / "SMPS_data")  # Place of your SMPS data
+SMPS_PLOT_DIR = str(WORK_DIR / "plots")  # Place to save SMPS plots (w/o weather)
+SMPS_WEATHER_PLOT_DIR = str(WORK_DIR / "plots")  # Place to save SMPS plots (w/ weather)
 
 
 LOCAL_TIMEZONE = "America/Anchorage"  # Modify this if needed
