@@ -33,4 +33,4 @@ pip install -e .
    
    - `python plot_SMPS_weather.py` - To plot SMPS heat map with weather
    
-   ![](/home/wcr/Desktop/cr_smps/docs/PABI_daily_w_SMPS_2025-08-11.png)
+   ![](/docs/PABI_daily_w_SMPS_2025-08-11.png)
